@@ -202,3 +202,7 @@ bindsym --release Shift+Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdi
 
 # OSX-like area selection screenshots
 bindsym --release Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Изображения/Скриншоты && mv $f ~/Изображения/Скриншоты && xclip -selection clipboard -t image/png -i ~/Изображения/Скриншоты/`ls -1 -t ~/Изображения/Скриншоты | head -1`' # Area selection
+
+# Align workspaces to monitor and TV
+workspace 1 output DVI-1
+workspace 10 output HDMI-0
