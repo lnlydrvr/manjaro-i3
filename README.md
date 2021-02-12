@@ -8,3 +8,4 @@ my dotfiles for i3-gaps setup on Manjaro Linux
 4. rofi - launch menu
 5. feh - wallpaper setup and images viewer
 6. pywal - colorschemes based on wallpaper
+7. alacritty - terminal
