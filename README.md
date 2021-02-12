@@ -6,3 +6,4 @@ my dotfiles for i3-gaps setup on Manjaro Linux
 2. i3-wm and i3-gaps - WM
 3. scrot and xclip - for screenshots
 4. rofi - launch menu
+5. feh - wallpaper setup and images viewer
