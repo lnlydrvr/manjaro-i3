@@ -9,3 +9,4 @@ my dotfiles for i3-gaps setup on Manjaro Linux
 5. feh - wallpaper setup and images viewer
 6. pywal - colorschemes based on wallpaper
 7. alacritty - terminal
+8. polybar - bar itself
