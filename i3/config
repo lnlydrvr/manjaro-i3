@@ -12,11 +12,14 @@
 # i3-gaps config
 # i3-gaps windows
 hide_edge_borders both
-for_window [class=".*"] border pixel 0
+for_window [class=".*"] border pixel 3
 gaps inner 15
-gaps outer 15
-#i3-bar gaps
-for_window [class="i3bar"] gaps outer current set 10
+gaps outer 5
+# border colors
+client.focused #6f7194 #6f7194 #000088 #6f7194
+client.focused_inactive #6d76d3 #6d76d3 #ffffff #6d76d3
+client.unfocused #6d76d3 #6d76d3 #ffffff #6d76d3
+client.urgent #6f7194 #6f7194 #000088 #6f7194
 
 set $mod Mod4
 
