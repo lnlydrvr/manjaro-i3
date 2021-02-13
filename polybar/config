@@ -151,7 +151,7 @@ type = internal/cpu
 interval = 2
 format-prefix = "cpu "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #7c7df5
+format-underline = #b9b9bb
 label = %percentage:2%%
 
 [module/memory]
@@ -159,7 +159,7 @@ type = internal/memory
 interval = 2
 format-prefix = "mem "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #7c7df5
+format-underline = #b9b9bb
 label = %percentage_used%%
 
 [module/eth]
