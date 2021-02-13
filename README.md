@@ -1,4 +1,4 @@
-# i3-dots
+## dotfiles and items
 my dotfiles for i3-gaps setup on Manjaro Linux
 
 ## used items:
