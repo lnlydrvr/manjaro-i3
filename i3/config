@@ -106,16 +106,16 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
+set $ws1 "1:Firefox"
+set $ws2 "2:Code"
+set $ws3 "3:Social"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
-set $ws10 "10"
+set $ws10 "10: TV"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -206,8 +206,8 @@ bindsym --release Shift+Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdi
 bindsym --release Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Изображения/Скриншоты && mv $f ~/Изображения/Скриншоты && xclip -selection clipboard -t image/png -i ~/Изображения/Скриншоты/`ls -1 -t ~/Изображения/Скриншоты | head -1`' # Area selection
 
 # Align workspaces to monitor and TV
-workspace 1 output DVI-1
-workspace 10 output HDMI-0
+workspace $ws1 output DVI-1
+workspace $ws10 output HDMI-0
 
 # launch polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
