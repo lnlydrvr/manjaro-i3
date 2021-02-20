@@ -1,0 +1,54 @@
+configuration {
+  modi: "drun";
+  width: 50;
+  font: "Roboto Bold 10";
+  terminal: "alacritty";
+  disable-history: false;
+  sidebar-mode: true;
+  tokenize: true;
+  m: "-5";
+  line-margin: 4;
+  line-padding: 5;
+  separator-style: "none";
+  hide-scrollbar: true;
+  window-format: "{w} {c}";
+}
+
+* {
+  /*bg: #0F1212;*/
+  bg: #060936;
+  fg: #cacce1;
+  accent: #d4a589;
+  
+  background-color: @bg;
+  text-color: @fg;
+}
+
+window {
+  padding: 30px;
+  border-radius: 0px;
+  border:3px;
+  border-color:#6f7194;
+}
+
+prompt, entry {
+  text-color: @fg;
+  padding: 3px 3px 10px 3px;
+}
+
+element {
+  border-radius: 2px;
+  padding: 4px;
+}
+
+element selected {
+  background-color: @fg;
+  text-color: @bg;
+}
+
+button selected {
+  background-color: @fg;
+  text-color: @bg;
+  border-radius: 2px;
+  padding: 4px;
+}
