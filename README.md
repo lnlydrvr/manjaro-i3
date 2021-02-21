@@ -10,4 +10,5 @@ my dotfiles for i3-gaps setup on Manjaro Linux
 6. pywal - colorschemes based on wallpaper
 7. alacritty - terminal
 8. polybar - bar itself
-8. polybar-spotify-git - Spotify in bar
+9. polybar-spotify-git - Spotify in bar
+10. pavucontrol - volume configuration
