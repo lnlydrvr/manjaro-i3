@@ -16,10 +16,10 @@ for_window [class="^.*"] border pixel 3
 gaps inner 15
 gaps outer 5
 # border colors
-client.focused #6f7194 #6f7194 #000088 #6f7194
-client.focused_inactive #6d76d3 #6d76d3 #ffffff #6d76d3
-client.unfocused #6d76d3 #6d76d3 #ffffff #6d76d3
-client.urgent #6f7194 #6f7194 #000088 #6f7194
+client.focused #D92332 #D92332 #000088 #D92332
+client.focused_inactive #122A59 #122A59 #ffffff #122A59
+client.unfocused #122A59 #122A59 #ffffff #122A59
+client.urgent #D92332 #D92332 #000088 #D92332
 
 set $mod Mod4
 
@@ -52,7 +52,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill
 
 # start rofi (launch apps)
-bindsym $mod+d exec rofi -show run
+bindsym $mod+d exec rofi -show drun
 
 # change focus
 bindsym $mod+j focus left
@@ -109,13 +109,13 @@ bindsym $mod+a focus parent
 set $ws1 "1: Firefox"
 set $ws2 "2: Code"
 set $ws3 "3: Social"
-set $ws4 "4"
+set $ws4 "4: Media"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
-set $ws10 "10: TV"
+set $ws10 "10"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -177,6 +177,10 @@ bindsym $mod+r mode "resize"
 
 ## my config strings
 
+# screen brightness controls
+bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
+
 # multimedia keys support
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioPause exec playerctl play-pause
@@ -200,10 +204,10 @@ exec --no-startup-id setxkbmap -model pc105 -layout us,ru -option 'grp:alt_shift
 exec_always xrandr --output DisplayPort-0 --off --output HDMI-0 --mode 1920x1080 --pos 1920x0 --rotate normal --output DVI-0 --off --output DVI-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal
 
 # Multi-screen screenshots with scrot
-bindsym --release Shift+Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Изображения/Скриншоты && mv $f ~/Изображения/Скриншоты && xclip -selection clipboard -t image/png -i ~/Изображения/Скриншоты/`ls -1 -t ~/Изображения/Скриншоты | head -1`' # All screens
+bindsym --release Shift+Print exec scrot --silent 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Изображения/Скриншоты && mv $f ~/Изображения/Скриншоты && xclip -selection clipboard -t image/png -i ~/Изображения/Скриншоты/`ls -1 -t ~/Изображения/Скриншоты | head -1`' # All screens
 
 # OSX-like area selection screenshots
-bindsym --release Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Изображения/Скриншоты && mv $f ~/Изображения/Скриншоты && xclip -selection clipboard -t image/png -i ~/Изображения/Скриншоты/`ls -1 -t ~/Изображения/Скриншоты | head -1`' # Area selection
+bindsym --release Print exec scrot --silent -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Изображения/Скриншоты && mv $f ~/Изображения/Скриншоты && xclip -selection clipboard -t image/png -i ~/Изображения/Скриншоты/`ls -1 -t ~/Изображения/Скриншоты | head -1`' # Area selection
 
 # Align workspaces to monitor and TV
 workspace $ws1 output DVI-1
