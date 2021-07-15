@@ -394,6 +394,7 @@ format-underline = #1db954
 type = custom/script
 exec = $HOME/.config/polybar/updates.sh
 interval = 600
+format-underline = ${colors.background-alt}
 
 [module/powermenu]
 type = custom/menu
