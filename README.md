@@ -16,3 +16,4 @@ my dotfiles for i3-gaps setup on Manjaro Linux
 12. betterlockscreen - lockscreen daemon
 13. dunst - notifications daemon
 14. noto-fonts-emoji-apple - emojis
+15. gdm-tools - change greeter theme
