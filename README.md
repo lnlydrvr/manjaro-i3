@@ -16,3 +16,5 @@
 13. dunst - notifications daemon
 14. noto-fonts-emoji-apple - emojis
 15. gdm-tools - change greeter theme
+16. lxappearance - change themes, icons and cursors
+17. gnome-tweaks - change themes, icons and cursors
