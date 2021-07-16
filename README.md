@@ -1,5 +1,6 @@
 ## dotfiles and items
 my dotfiles for i3-gaps setup on Manjaro Linux
+![изображение](https://user-images.githubusercontent.com/38766033/125949301-58e3c6b6-34fc-4bd1-931b-c4c320e0bae3.png)
 
 ## used items:
 1. Manjaro Linux Gnome Edtion - base platform
