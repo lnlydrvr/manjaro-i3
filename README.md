@@ -13,3 +13,5 @@ my dotfiles for i3-gaps setup on Manjaro Linux
 9. polybar-spotify-git - Spotify in bar
 10. pavucontrol - volume configuration
 11. light - brightness control
+12. betterlockscreen - lockscreen daemon
+13. dunst - notifications daemon
