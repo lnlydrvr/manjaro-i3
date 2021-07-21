@@ -18,3 +18,7 @@
 15. gdm-tools - change greeter theme
 16. lxappearance - change themes, icons and cursors
 17. gnome-tweaks - change themes, icons and cursors
+18. auto-cpufreq - battery life
+19. tlpui - battery life
+### Useful videos
+1. https://www.youtube.com/watch?v=JSW0ODq-D9M - battery and boot optimization
