@@ -38,15 +38,11 @@ font pango:Roboto Bold 8
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
-# NetworkManager is the most popular way to manage wireless networks on Linux,
-# and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
-
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -179,8 +175,8 @@ bindsym $mod+r mode "resize"
 exec --no-startup-id dunst
 
 #lockscreen
-exec --no-startup-id betterlockscreen -w dimblur
-bindsym $mod+Shift+x exec betterlockscreen -l dimblur
+exec --no-startup-id betterlockscreen -w blur
+bindsym $mod+Shift+x exec betterlockscreen -l blur
  
 # screen brightness controls
 bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
