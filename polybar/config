@@ -45,7 +45,7 @@ line-color = #f00
 border-size = 4
 border-color = #00000000
 
-padding-left = 0
+padding-left = 2
 padding-right = 2
 
 module-margin-left = 1
@@ -108,7 +108,7 @@ label-indicator-underline = ${colors.background-alt}
 
 [module/filesystem]
 type = internal/fs
-interval = 25
+interval = 600
 
 mount-0 = /
 
@@ -156,7 +156,7 @@ label-separator = /
 
 [module/cpu]
 type = internal/cpu
-interval = 2
+interval = 5
 format-prefix = " CPU "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = ${colors.background-alt}
@@ -164,7 +164,7 @@ label = "%percentage:2%% "
 
 [module/memory]
 type = internal/memory
-interval = 2
+interval = 5
 format-prefix = " RAM "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = ${colors.background-alt}
