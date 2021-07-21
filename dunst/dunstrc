@@ -84,7 +84,7 @@
     frame_width = 3
 
     # Defines color of the frame around the notification window.
-    frame_color = "#122A59"
+    frame_color = "#D92332"
 
     # Define a color for the separator.
     # possible values are:
@@ -318,7 +318,7 @@
 
     # Redisplay last message(s). Equivalent dunstctl command:
     # dunstctl history-pop
-    # history = ctrl+grave
+    history = mod4+grave
 
     # Context menu. Equivalent dunstctl command:
     # dunstctl context
